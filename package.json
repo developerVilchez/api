@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api with node and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerVilchez/api.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express"
+  ],
+  "author": "Lourdes Vilchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerVilchez/api/issues"
+  },
+  "homepage": "https://github.com/developerVilchez/api#readme"
+}
