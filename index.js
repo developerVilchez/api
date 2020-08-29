@@ -4,7 +4,6 @@ const { getDataFromJson } = require('./utils/utils');
 const config = require('./utils/config');
 const app = express();
 
-//competitions endpoint
 app.get('/competitions', (req, res) => {
   fetch(`${config.api.host}${config.api.resources}?access_token=${config.api.token}`)
     .then(res => res.json())
@@ -12,7 +11,7 @@ app.get('/competitions', (req, res) => {
     .catch(err => res.status(404).send(err))
 });
 
-//competition by id
+
 app.get('/competitions/:id', (req, res) => {
   fetch(`${config.api.host}${config.api.resources}?access_token=${config.api.token}`)
   .then(res => res.json())
@@ -21,7 +20,7 @@ app.get('/competitions/:id', (req, res) => {
   .catch(err => res.status(404).send(err["message"]) )
 });
 
-//teams endpoint
+
 app.get('/teams', (req, res) => {
   getDataFromJson('./data/teams.json', 'utf-8')
     .then(data => res.send(JSON.parse(data.toString())["teams"]))
