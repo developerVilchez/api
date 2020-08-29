@@ -1,0 +1,22 @@
+{
+  "count": 10,
+  "filters": {},
+  "players": [
+      {
+          "player": {
+              "id": 2045,
+              "name": "Mario Mandžukić",
+              "firstName": "Mario",
+              "lastName": "Mandžukić",
+              "dateOfBirth": "1986-05-21",
+              "countryOfBirth": "Croatia",
+              "nationality": "Croatia",
+              "position": "Attacker",
+              "lastUpdated": "2018-08-09T05:07:10Z"
+          },
+          "team": {
+              "id": 109,
+              "name": "Juventus FC"
+          }
+      }]
+    }
