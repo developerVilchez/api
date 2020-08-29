@@ -23,7 +23,7 @@ app.get('/competitions/:id', (req, res) => {
 
 app.get('/teams', (req, res) => {
   getDataFromJson('./data/teams.json', 'utf-8')
-    .then(data => res.send(JSON.parse(data.toString())["teams"]))
+    .then(data => res.send(JSON.parse(data.toString())))
     .catch(err => res.send({ path : `${err.path}`, msg:'revisa la url de la data'}))
 })
 
