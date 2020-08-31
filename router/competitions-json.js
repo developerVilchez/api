@@ -8,7 +8,7 @@ competitionsJsonRouter.get('/', (req, res) => {
   getDataFromJson('data/competitions.json', 'utf-8')
     .then(data => JSON.parse(data.toString()))
     .then(data => res.send(data))
-    .catch(err => res.status(404).send( {path:`${err.path}`, msg:'not found-verify local json', code:'404'}))
+    .catch(err => res.status(404).send( {path:`${err.path}`, msg:'not found/verify local json', code:'404'}))
 })
 
 competitionsJsonRouter.get('/:id', (req, res) => {    
