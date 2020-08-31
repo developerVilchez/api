@@ -28,9 +28,6 @@ This project aims to use public data of [football-data API](https://football-dat
 ```
 - /competitions
 - /competitions/<competition_id>
-- /team 
-- /team/<team_id> 
-- /players 
 ```
 
 If you are using local-json with data from [football-data API](https://football-data.org)
@@ -47,6 +44,7 @@ you can use these endpoints
 #### Installation
 
 ```bash
+
 > git clone git@github.com:developerVilchez/api.git
 > npm install
 > node server.js
