@@ -37,8 +37,8 @@ you can use these endpoints
 ```
 - /competitions-json
 - /competitions-json/<competition_id> 
-- /team-json 
-- /team-json/<team_id> 
+- /teams-json 
+- /teams-json/<team_id> 
 - /players-json
 ```
 #### Installation
