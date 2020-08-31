@@ -5,11 +5,13 @@ const config = require('./utils/config');
 const app = express();
 const  competitionsRouter = require('./router/competitions');
 const competitionsJsonRouter = require('./router/competitions-json');
+const teamsJsonRouter = require('./router/teams-json');
 
 app.use('/competitions', competitionsRouter);
 
 //get for json
 app.use('/competitions-json', competitionsJsonRouter);
+app.use('/teams.json', teamsJsonRouter);
 
 app.get('/teams', (req, res) => {
   getDataFromJson('./data/teams.json', 'utf-8')
