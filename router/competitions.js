@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 const config = require('../utils/config');
 const url = `${config.api.host}${config.api.resources}?access_token=${config.api.token}`;
-console.log(url);
+
 
 const competitionsRouter = express.Router();
 
